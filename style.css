@@ -1,0 +1,34 @@
+ney* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  background-color: blue;
+  background-image: url("https://i.ibb.co/HNvHSyV/image-header.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  height: 100vh;
+}
+.box_banner_header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav {
+  display: flex;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+}
+.nav span {
+  margin-right: 30px;
+}
+.contact {
+  background-color: white;
+  color: black;
+  padding: 4px 15px;
+  border-radius: 15px;
+}
