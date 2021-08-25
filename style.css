@@ -2,15 +2,18 @@ ney* {
   margin: 0;
   padding: 0;
 }
-.box {
+.box_banner {
   background-color: blue;
   background-image: url("https://i.ibb.co/HNvHSyV/image-header.jpg");
   background-position: center bottom;
   background-size: cover;
   height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
 }
 .box_banner_header {
-  height: 40px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,10 +28,150 @@ ney* {
 }
 .nav span {
   margin-right: 30px;
+  cursor: pointer;
 }
 .contact {
   background-color: white;
   color: black;
-  padding: 4px 15px;
-  border-radius: 15px;
+  padding: 8px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.25s all ease-in-out;
+}
+.contact:hover {
+  background-color: antiquewhite;
+}
+.box_banner_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  flex-grow: 1;
+  color: white;
+  font-weight: bold;
+}
+.text {
+  margin-bottom: 80px;
+}
+.arrow {
+  margin-bottom: 100px;
+}
+.box_section1,
+.section2 {
+  display: flex;
+  height: 360px;
+}
+.left,
+.right {
+  flex: 1;
+}
+.box_section1 img {
+  width: 100%;
+
+  object-fit: cover;
+}
+.box_section1 .text_container {
+  width: 60%;
+}
+.box_section1 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.left p {
+  color: #848391;
+  line-height: 1.9;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+}
+.left .button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.left h1 {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.left div img {
+  width: 100px;
+}
+.left p {
+  color: #848391;
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 16px;
+}
+.box_section1,
+.section2 .left .right {
+  flex: 1;
+}
+.left img,
+.right img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+.client_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.client_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffbf8;
+  padding-top: 40px;
+}
+.testimonials h1 {
+  color: #a0a1a2;
+  font-size: 24px;
+
+  margin-bottom: 40px;
+}
+.clients .client1 {
+  flex-direction: column;
+  flex: 0.3;
+  align-items: center;
+}
+.client1 {
+  display: flex;
+}
+.client1 p {
+  text-align: center;
+  margin-bottom: 16px;
+  width: 40%;
+  color: #848391;
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 16px;
+}
+.client1 img {
+  margin-bottom: 16px;
+}
+.client1 .details {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.clients {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.clients .client1 {
+  flex: 1;
+}
+.footer {
+  background-color: #90d4c5;
+  height: 400px;
 }
